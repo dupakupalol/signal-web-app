@@ -18,7 +18,7 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route exact path="/signal-web-app/home" element={<Home />}/>
+        <Route exact path="/signal-web-app/home/" element={<Home />}/>
         <Route path="/signal-web-app/about" element={<About />}/>
         <Route path="/system" element={<System />}/>
         <Route path="/pricing" element={<Pricing />}/>
