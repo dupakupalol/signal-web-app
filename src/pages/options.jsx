@@ -5,11 +5,18 @@ function Options(){
     return(
         <>
             <Header />
-            <h1>Options</h1>
-            <a href="/crypto">Crypto</a>&nbsp;
-            <a href="/dropshipp">Dropshipp</a>&nbsp;
-            <a href="/socials">Socials</a>
+            <OptionsContent />
             <Footer/>
+        </>
+    )
+}
+function OptionsContent(){
+    return(
+        <>
+            <h1>Options</h1>
+            <a href="/crypto" target="_blank">Crypto</a>&nbsp;
+            <a href="/dropshipp" target="_blank">Dropshipp</a>&nbsp;
+            <a href="/socials" target="_blank">Socials</a>
         </>
     )
 }

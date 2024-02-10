@@ -42,6 +42,15 @@
 .stickyFooter #youtube{
     color: white;
 }
+.stickyFooter #twitter:hover{
+    color: #1da1f2;
+}
+.stickyFooter #telegram:hover{
+    color: white;
+}
+.stickyFooter #youtube:hover{
+    color: #ff0000;
+}
 .stickyFooter a:hover {
     text-decoration: underline;
 }

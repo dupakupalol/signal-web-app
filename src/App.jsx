@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./pages/header/home"
 import About from "./pages/header/about"
-import System from "./pages/header/system"
 import Pricing from "./pages/header/pricing"
 import noPage from "./pages/noPage"
 import LegalStuff from "./pages/footer/legalstuff"
@@ -11,16 +10,24 @@ import Options from "./pages/options"
 import Crypto from "./pages/options/crypto"
 import Socials from "./pages/options/socials"
 import Dropshipp from "./pages/options/dropshipp"
+import Course from "./pages/header/course"
 
 function App() {
 
   return (
     <>
+      <AppRoutes />
+    </>
+  )
+}
+function AppRoutes(){
+  return(
+    <>
     <BrowserRouter>
       <Routes>
-        <Route exact path="/signal-web-app/home/" element={<Home />}/>
-        <Route path="/signal-web-app/about" element={<About />}/>
-        <Route path="/system" element={<System />}/>
+        <Route index element={<Home />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/course" element={<Course />}/>
         <Route path="/pricing" element={<Pricing />}/>
         <Route path="/legalstuff" element={<LegalStuff />}/>
         <Route path="/privacypolicy" element={<PrivacyPolicy />}/>
@@ -35,5 +42,6 @@ function App() {
     </>
   )
 }
+
 
 export default App

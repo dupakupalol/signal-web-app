@@ -6,19 +6,28 @@ function Home(){
     return(
         <>
             <Header />
-            <div className="box">
-                <h1>
-                Smart Profit with AI.<br></br>
-                Start Earning,<br></br>
-                Right Now!
-                </h1>
-                <p>
-                Use the potential of artificial intelligence.<br></br>
-                Time is running out, join now or get left behind.
-                </p>
-            </div>
-            <a href="/options"><button>Check Out!</button></a>
+            <HomeContent />
             <Footer/>
+        </>
+    )
+}
+
+function HomeContent(){
+    return(
+        <>
+        <section className="home">
+            <video className="video-slide" src="../src/assets/video.mp4" autoPlay muted loop></video>
+            <div className="content">
+                <h1 className="homeH1">Signal<br></br>Network</h1>
+                <p className="pH1">Use the potential of artificial intelligence.<br></br>Time is running out, join now or get left behind.</p>
+                <a href="/options">Check Out!</a>
+            </div>
+        </section>
+        <div>
+            <div className="home-crypto"><h1>Crypto</h1></div>
+            <div className="home-dropshipp"><h1>E-commerce</h1></div>
+            <div className="home-socials"><h1>Socials</h1></div>
+        </div>
         </>
     )
 }

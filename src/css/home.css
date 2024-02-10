@@ -1,16 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
     min-height: 100vh;
-    background: url("../assets/background.jpg") no-repeat;
+    /*background: url("../assets/background.jpg") no-repeat;*/
+    background-color: #222121;
     background-size: cover;
     background-position: center;
     color: hsl(0, 0%, 90%);
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 255, 255) #222121;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #3d3d3d;
+}
+section{
+    padding: 0px 200px;
+}
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home .content{
+    width: 70%;
+}
+.home .content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 30px;
+}
+.home .content p{
+    margin-bottom: 65px;
+}
+.home .content a{
+    background: #fff;
+    padding: 15px 35px;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.home::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.733);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.home video{
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 1040px) {
+    header {
+        padding: 12px 20px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+    header .navbar {
+        display: none;
+    }
+    header .navbar.active {
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+    }
+    header .navbar.active a{
+        color: #fff;
+        font-size: 1em;
+        margin: 20px;
+    }
+    
+    .menu-btn{
+        background: url("../assets/menu.png") no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        
+    }
+    .menu-btn.active{
+        z-index: 1001;
+        background: url("../assets/close.png") no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
 }
