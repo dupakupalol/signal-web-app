@@ -1,0 +1,52 @@
+.stickyFooter {
+    background-color: hsla(0, 0%, 0%, 0.3);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.stickyFooter ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.stickyFooter li {
+    margin: 10px 10px;
+    opacity: 0.8;
+}
+.stickyFooter li:hover {
+    opacity: 1;
+}
+.stickyFooter a {
+    color: white;
+    text-decoration: none;
+}
+.stickyFooter .brand{
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+.stickyFooter .brand:hover {
+    opacity: 1;
+}
+.stickyFooter #twitter{
+    color: white;
+}
+.stickyFooter #telegram{
+    color: white;
+}
+.stickyFooter #youtube{
+    color: white;
+}
+.stickyFooter a:hover {
+    text-decoration: underline;
+}
+footer p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.8em;
+    padding-top: 10px;
+}
